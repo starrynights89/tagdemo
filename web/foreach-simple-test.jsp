@@ -8,8 +8,13 @@
 %>
 
 <html>
-<body>
-    <c:forEach var="tempCity"></c:forEach>
+<body>    Thanks! We set your favorite language to:
+    ${param:favoriteLanguage}
+    <c:forEach var="tempCity" items="${myCities}">
+
+        ${tempCity} <br/>
+
+    </c:forEach>
 
 </body>
 
